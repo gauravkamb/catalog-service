@@ -25,7 +25,7 @@ jobs:
           cache: gradle
 
       - name: Build, unit tests and integration tests
-        working-directory: catalog-service
+#        working-directory: catalog-service
         run: |
           chmod +x gradlew
           ./gradlew build
@@ -66,7 +66,7 @@ jobs:
           cache: gradle
 
       - name: Build container image
-        working-directory: catalog-service
+#        working-directory: catalog-service
         run: |
           chmod +x gradlew
           ./gradlew bootBuildImage \
