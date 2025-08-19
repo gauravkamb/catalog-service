@@ -1,6 +1,6 @@
 name: Commit Stage
 on:
-  workflow_call:
+  repository_dispatch: [catalog-service-build]
 
 env:
   REGISTRY: ghcr.io
