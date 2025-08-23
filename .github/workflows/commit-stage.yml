@@ -1,4 +1,4 @@
-name: Commit Stage
+name: Catalog service build
 on:
   repository_dispatch: [catalog-service-build]
 
@@ -11,6 +11,9 @@ jobs:
   build:
     name: Build and Test
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: /catalog-service
     permissions:
       contents: read
       security-events: write
